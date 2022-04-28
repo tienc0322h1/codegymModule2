@@ -8,8 +8,8 @@ class Application{
 }
 console.log(Application.count);
 let app1 = new Application('App one');
-console.log(app1);
+console.log(Application.count);
 let app2 = new Application('App Two');
-console.log(app2);
+console.log(Application.count);
 
 
