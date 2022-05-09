@@ -64,9 +64,9 @@ describe("define triangle", () => {
         expect(Triangle.checkTriangle(sideA,sideB,sideC)).toBe(result);
     })
     test("check triangle with SideA greater sideB+sideC", () => {
-        const sideA = 3;
+        const sideA = 9;
         const sideB = 4;
-        const sideC = 9;
+        const sideC = 3;
         let result = "is not a triangle";
         expect(Triangle.checkTriangle(sideA,sideB,sideC)).toBe(result);
     })
@@ -74,6 +74,13 @@ describe("define triangle", () => {
         const sideA = 3;
         const sideB = 9;
         const sideC = 4;
+        let result = "is not a triangle";
+        expect(Triangle.checkTriangle(sideA,sideB,sideC)).toBe(result);
+    })
+    test("check triangle with SideC greater sideA+sideB", () => {
+        const sideA = 3;
+        const sideB = 4;
+        const sideC = 9;
         let result = "is not a triangle";
         expect(Triangle.checkTriangle(sideA,sideB,sideC)).toBe(result);
     })
