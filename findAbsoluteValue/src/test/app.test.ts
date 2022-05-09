@@ -6,3 +6,11 @@ describe("find absolute of int number", () => {
         expect(FindAbsoluteValue.findAbsolute(number1)).toBe(result)
     })
 })
+
+describe("find absolute of int number", () => {
+    test("find absolute value", () => {
+        const number1 = -3;
+        const result = 3;
+        expect(FindAbsoluteValue.findAbsolute(number1)).toBe(result)
+    })
+})
