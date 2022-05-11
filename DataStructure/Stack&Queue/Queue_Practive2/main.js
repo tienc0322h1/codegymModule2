@@ -1,0 +1,17 @@
+"use strict";
+exports.__esModule = true;
+var Queue_1 = require("./Queue");
+var queue = new Queue_1.Queue();
+console.log(queue);
+console.log(queue.size());
+queue.enqueue(1);
+queue.enqueue(2);
+console.log(queue);
+console.log(queue.size());
+queue.enqueue(3);
+queue.enqueue(4);
+console.log(queue);
+console.log(queue.size());
+queue.dequeue();
+console.log(queue);
+console.log(queue.dequeue());
